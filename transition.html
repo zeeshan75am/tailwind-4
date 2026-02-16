@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Transitions with Tailwind Css</title>
+    <link rel="stylesheet" href="./output.css">
+</head>
+<body>
+    <button class="bg-green-500 p-7 m-10 rounded text-white hover:bg-green-700">
+        Button 1
+    </button>
+
+    <button class="bg-green-500 p-7 m-10 rounded text-white hover:bg-green-700 transition duration-1000 ">
+        Button 2
+    </button>
+
+    <button class="bg-green-500 p-7 m-10 rounded text-white hover:opacity-5 transition duration-1000 ">
+        Button 3
+    </button>
+
+    <button class="bg-orange-500 p-7 m-10 rounded text-white transition-transform hover:rotate-360 duration-1000">
+        Button 4
+    </button>
+
+    <button class="bg-orange-500 p-7 m-10 rounded text-white transition-transform hover:scale-75 rotate-360 duration-1000">
+        Button 5
+    </button>
+
+
+    <img class="m-20 w-56 hover:rotate-45 hover:scale-125 transition-transform duration-1000" src="nature.jpg">
+</body>
+</html>

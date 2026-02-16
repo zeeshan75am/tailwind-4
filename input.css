@@ -1,0 +1,9 @@
+@import "tailwindcss";
+
+@theme {
+  /* your custom theme overrides if needed */
+}
+
+@utility my-utility {
+  color: red;
+}

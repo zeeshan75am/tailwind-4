@@ -1,0 +1,54 @@
+@reference "tailwindcss";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+
+  .btn{
+    @apply px-5 py-1.5 rounded
+  }
+   .btn-primary {
+    @apply bg-blue-500 hover:bg-blue-600 text-white border-blue-500 ; 
+  }
+   .btn-secondary {
+    @apply bg-green-500 hover:bg-green-600 text-white border-green-500 ; 
+  }
+   .btn-success {
+    @apply bg-slate-500 hover:bg-slate-600 text-white border-slate-500 ; 
+  }
+   .btn-danger {
+    @apply bg-yellow-500 hover:bg-yellow-600 text-white border-yellow-500 ; 
+  }
+   .btn-warning {
+    @apply bg-red-500 hover:bg-red-600 text-white border-red-500 ; 
+  }
+   .btn-info {
+    @apply bg-cyan-500 hover:bg-cyan-600 border-cyan-500 ; 
+  }
+   .btn-basic {
+    @apply bg-white hover:bg-slate-600 border-slate-900 ; 
+  }
+   .btn-dark {
+    @apply bg-black hover:bg-black border-slate-950 text-white ; 
+  }
+}
+
+
+.custom-container
+{
+  @apply bg-green-300;height: theme('spacing.48');
+}
+
+@media screen and (max-width: 1024-98px){
+  body{
+    @apply bg-red-500;
+  }
+}
+
+@layer component{
+  .img-gallery{
+    @apply rounded border-2 border-red-900 w-50 hover:border-red-500 hover:scale-110 transition duration-1000 hover:brightness-125;
+  }
+}
