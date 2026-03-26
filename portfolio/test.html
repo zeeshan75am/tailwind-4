@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="overflow-x-hidden">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,70 +10,90 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
-<body class="bg-black h-full w-[1325px]">
+<body class="bg-black text-white h-full w-full overflow-x-hidden">
 
 
-    <div class="bg-black text-white h-full w-full ">
+    <div class="bg-black text-white h-full w-full overflow-x-hidden">
 
 
                               <!-- header -->
 
 
 <header>
-    <div class="bg-gray-700 h-10 w-[1340px] flex items-center">
-        <div class=" flex w-full items-center justify-between px-6 text-sm">
-            <div class=" flex items-center gap-3 ">
-                <i class="fa-regular fa-message mt-0.5"></i>
-                 <p>Elementor Is Great WordPress...</p>
-                <div class=" flex gap-2">
-                    <i class="fa-solid fa-arrow-left cursor-pointer"></i>
-                <i class="fa-solid fa-arrow-right cursor-pointer"></i>
-                </div>
-                </div>
+  <div class="bg-gray-700">
+    <div class="max-w-full max-w-[1200px] mx-auto px-4 md:px-8 mx-auto px-4 h-10 flex items-center justify-between text-sm">
+      
+      <!-- Left Side -->
+      <div class="flex items-center gap-3 overflow-hidden">
+        <i class="fa-regular fa-message"></i>
 
-            <div class=" flex items-center gap-4 ">
-                <i class="fa-brands fa-facebook-f cursor-pointer"></i>
-                <i class="fa-brands fa-twitter cursor-pointer"></i>
-                <i class="fa-brands fa-linkedin-in cursor-pointer"></i>
-                <i class="fa-brands fa-instagram cursor-pointer"></i>
-                <div class="flex flex-grow justify-center cursor-pointer">
-                    <a class="bg-green-700 hover:bg-green-600 text-white px-4 py-1 rounded-sm text-sm" href="#">Contact Me</a>
-                </div>
-            </div> 
+        <!-- Hide text on very small screens -->
+        <p class="hidden sm:block whitespace-nowrap">
+          Elementor Is Great WordPress...
+        </p>
+
+        <!-- Arrows (hide on mobile) -->
+        <div class="hidden sm:flex gap-2">
+          <i class="fa-solid fa-arrow-left cursor-pointer"></i>
+          <i class="fa-solid fa-arrow-right cursor-pointer"></i>
         </div>
+      </div>
+
+      <!-- Right Side -->
+      <div class="flex items-center gap-3">
+        
+        <!-- Social Icons (hide on small screens) -->
+        <div class="hidden md:flex items-center gap-4">
+          <i class="fa-brands fa-facebook-f cursor-pointer"></i>
+          <i class="fa-brands fa-twitter cursor-pointer"></i>
+          <i class="fa-brands fa-linkedin-in cursor-pointer"></i>
+          <i class="fa-brands fa-instagram cursor-pointer"></i>
+        </div>
+
+        <!-- Button -->
+        <a class="bg-green-700 hover:bg-green-600 text-white px-3 py-1 rounded-sm text-xs sm:text-sm whitespace-nowrap"
+           href="#">
+          Contact
+        </a>
+
+      </div>
+
     </div>
+  </div>
 </header>
 
                                                     <!-- navbar -->
 
 
- <nav  class="w-[1325px]">
-    <div class="flex items-center gap-4 ml-10 mt-5 2xl:ml-80 ">
-        <div class="flex">
-            <img src="https://quomodosoft.com/html/glint/assets/img/logo/logo.png" alt="">
-      <div class="">
-            <i class="fa-solid fa-bars mt-4 ml-48  "></i>
-            </div>
-  <div class="flex justify-center w-full mr-40">
-    <ul class="flex items-center gap-4">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">PAGES</a></li>
-    </ul>
-</div>
+ <nav class="bg-black">
+  <div class="max-w-full max-w-[1200px] mx-auto px-4 md:px-8 mx-auto px-4 flex items-center justify-between py-4">
 
-        <div class="ml-52 hidden ">
-            <form>
-                <i class="fa-solid fa-magnifying-glass text-green-600"></i>
-                    <input placeholder="Search" type="search"> 
-                
-            </form>
-        </div>
+    <!-- Logo -->
+    <div class="flex items-center gap-4">
+      <img src="https://quomodosoft.com/html/glint/assets/img/logo/logo.png" alt="Logo" class="h-10">
+
+      <!-- Hamburger (mobile) -->
+      <button class="md:hidden text-white text-2xl">
+        <i class="fa-solid fa-bars"></i>
+      </button>
     </div>
-        </div>
 
+    <!-- Menu Items (desktop) -->
+    <ul class="hidden md:flex items-center gap-6 text-white font-semibold">
+      <li><a href="#" class="hover:text-green-600">HOME</a></li>
+      <li><a href="#" class="hover:text-green-600">ABOUT</a></li>
+      <li><a href="#" class="hover:text-green-600">SERVICES</a></li>
+      <li><a href="#" class="hover:text-green-600">PORTFOLIO</a></li>
+      <li><a href="#" class="hover:text-green-600">PAGES</a></li>
+    </ul>
+
+    <!-- Search (desktop) -->
+    <div class="hidden md:flex items-center gap-2">
+      <i class="fa-solid fa-magnifying-glass text-green-600"></i>
+      <input type="search" placeholder="Search" class="px-2 py-1 rounded text-black">
+    </div>
+
+  </div>
 </nav>
 
 
@@ -81,124 +101,105 @@
 
 
 
-<div class=" w-[1325px] ">
-    <div class="flex justify-start w-full mr-10">
-        <div class=" ml-20 py-10 ">
-            <h1 class=" text-5xl font-bold  ">
-                <span class="text-green-600">TURNING</span>
+<div class=" w-full max-w-[1325px] mx-auto px-4 sm:px-6 lg:px-12 ">
+    <div class="flex flex-col lg:flex-row justify-center lg:justify-start w-full">
+        <div class=" lg:ml-10 py-12 md:py-20 flex flex-col items-center lg:items-start text-center lg:text-left ">
+            <h1 class="text-4xl sm:text-5xl lg:text-7xl font-bold leading-tight tracking-tight">
+                <span class="text-green-600 block sm:inline mb-2 sm:mb-0">TURNING</span>
                   IDEAS INTO REALITY
             </h1>
-            <br>
-            <P>
-Turning ideas into reality is the foundation of impactful web development. Every successful project begins with a simple concept, which is then carefully shaped into a functional and visually appealing digital experience. As a developer, the goal is not just to write code, but to understand the vision behind it and bring it to life with precision and creativity. From planning and design to development and deployment, each step plays a vital role in transforming imagination into something real. By combining technical skills with innovative thinking, developers can create solutions that are not only efficient but also meaningful, helping businesses grow and users connect seamlessly in the digital world.</P>            <br>
-            <a  class="bg-green-600 py-3 px-5 rounded font-bold mt-5" href="https://github.com/zeeshan75am">Visit GitHub</a>
+            <p class="mt-6 text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-4xl">
+Turning ideas into reality is the foundation of impactful web development. Every successful project begins with a simple concept, which is then carefully shaped into a functional and visually appealing digital experience. As a developer, the goal is not just to write code, but to understand the vision behind it and bring it to life with precision and creativity. From planning and design to development and deployment, each step plays a vital role in transforming imagination into something real. By combining technical skills with innovative thinking, developers can create solutions that are not only efficient but also meaningful, helping businesses grow and users connect seamlessly in the digital world.</p>
+            <div class="mt-8 sm:mt-10">
+                <a class="bg-green-600 hover:bg-green-500 transition-colors duration-300 text-white py-3 sm:py-4 px-8 sm:px-10 rounded-md font-bold text-sm sm:text-base inline-block shadow-lg shadow-green-600/30" href="https://github.com/zeeshan75am">Visit GitHub</a>
+            </div>
         </div>
 
        
     </div>
 </div>
 
-<div class=" w-[1325px] "> 
-  <div class="flex  px-10 py-5 ml-10"> 
-    
-     
-
-    <div class=" "> 
-      <h2 class="text-5xl  font-bold"> 
-       WHERE CREATIVITY MEETS  <span class="text-green-600">CODE</span> 
+<div class=" w-full max-w-[1325px] mx-auto px-4 sm:px-6 lg:px-12 py-12 md:py-20"> 
+  <div class="flex flex-col lg:flex-row items-center lg:items-start text-center lg:text-left"> 
+    <div class="w-full"> 
+      <h2 class="text-4xl sm:text-5xl lg:text-6xl font-bold leading-tight tracking-tight"> 
+       WHERE CREATIVITY MEETS  <span class="text-green-600 block sm:inline mt-2">CODE</span> 
       </h2> 
-      <br> 
-      <p> 
-Where creativity meets code is where powerful digital experiences are born. It is the space where innovative ideas blend seamlessly with technical expertise to create websites and applications that are both functional and visually engaging. A skilled developer does not just focus on writing code but also understands design, user experience, and problem-solving. By combining creativity with logic, developers can build solutions that stand out and deliver real value. This balance allows for the creation of unique, efficient, and user-friendly products that meet modern needs. It transforms simple concepts into impactful digital realities that leave a lasting impression on users. </p><a class="inline-block bg-green-600 py-3 px-5 rounded font-bold text-white"
-   href="asets/zeeshan.pdf"
-   download>
-DOWNLOAD CV
-</a>  </div> 
+      <p class="mt-6 text-gray-300 text-sm sm:text-base lg:text-lg leading-relaxed max-w-4xl mx-auto lg:mx-0"> 
+Where creativity meets code is where powerful digital experiences are born. It is the space where innovative ideas blend seamlessly with technical expertise to create websites and applications that are both functional and visually engaging. A skilled developer does not just focus on writing code but also understands design, user experience, and problem-solving. By combining creativity with logic, developers can build solutions that stand out and deliver real value. This balance allows for the creation of unique, efficient, and user-friendly products that meet modern needs. It transforms simple concepts into impactful digital realities that leave a lasting impression on users. </p>
+      <div class="mt-8 sm:mt-10">
+        <a class="inline-block bg-green-600 hover:bg-green-500 transition-colors duration-300 py-3 sm:py-4 px-8 sm:px-10 rounded-md font-bold text-white text-sm sm:text-base shadow-lg shadow-green-600/30" href="asets/zeeshan.pdf" download>DOWNLOAD CV</a>
+      </div>
+    </div> 
   </div> 
 </div>
 <br>
 
                             <!-- third -->
 
-    <div class="w-[1325px]   "  >
-        <div class="flex justify-center items-center   ">
-    <div class=" text px-5 ml-14 w-full text-left">
-        <span class="text-xs text-green-600 font-bold">MY EXPERIENCE</span>
-        <h2 class="text-4xl font-bold ">EXPERIENCE AND 
-            <span class="text-green-600 ">SKILL</span>
+    <div class="w-full max-w-[1325px] mx-auto px-4 sm:px-6 lg:px-12 py-12 md:py-20"  >
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+    <div class="w-full text-center md:text-left">
+        <span class="text-sm text-green-600 font-bold tracking-wider uppercase">MY EXPERIENCE</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-2">EXPERIENCE AND 
+            <span class="text-green-600">SKILL</span>
         </h2>
     </div>
-    <div class="text-center w-full text-lg ml-5">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Sint ratione reprehenderit, error qui enim sit ex provident</p>
+    <div class="w-full text-center md:text-left text-gray-400 text-sm sm:text-base max-w-xl">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit, error qui enim sit ex provident</p>
     </div>
 </div>
-        <br><br>
 
-         <div class="flex  flex-row  ml-32  align-center justify-arround gap-10 w-[1200px]">
-        <div>
-            <div class="border border-gray-950 hover:bg-gray-950 transition duration-700 w-64 h-48 text-center py-6 items-center">
-                <small class="font-bold">2011 - 2014 (UI DESIGNER)</small>
-                <h5 class="text-green-600 font-bold text-xl">GOOGLE CORPORATION.</h5>
-                <p>All you need to do your best <br> work together in one package <br> works seamlessly computer</p>
-            </div>
+         <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 w-full max-w-[1200px] mx-auto">
+        <div class="border border-gray-800 hover:border-green-600 hover:bg-gray-900 transition-all duration-500 w-full rounded-lg text-center py-8 px-4 group shadow-sm hover:shadow-green-600/10 hover:-translate-y-1">
+            <small class="font-bold text-gray-500 group-hover:text-gray-300">2011 - 2014 (UI DESIGNER)</small>
+            <h5 class="text-green-600 font-bold text-xl mt-3 mb-2">GOOGLE CORPORATION.</h5>
+            <p class="text-sm text-gray-400">All you need to do your best work together in one package works seamlessly computer</p>
         </div>
-
-
-        <div>
-            <div class="border border-gray-950 hover:bg-gray-950 transition duration-700 w-64  h-48 text-center py-6">
-                <small class="font-bold">2011 - 2014 (UI DESIGNER)</small>
-                <h5 class="text-green-600 font-bold text-xl">APPLE PRODUCTY CO.</h5>
-                <p>All you need to do your best <br> work together in one package <br> works seamlessly computer</p>
-            </div>
+        <div class="border border-gray-800 hover:border-green-600 hover:bg-gray-900 transition-all duration-500 w-full rounded-lg text-center py-8 px-4 group shadow-sm hover:shadow-green-600/10 hover:-translate-y-1">
+            <small class="font-bold text-gray-500 group-hover:text-gray-300">2011 - 2014 (UI DESIGNER)</small>
+            <h5 class="text-green-600 font-bold text-xl mt-3 mb-2">APPLE PRODUCTY CO.</h5>
+            <p class="text-sm text-gray-400">All you need to do your best work together in one package works seamlessly computer</p>
         </div>
-
-
-        <div>
-            <div class="border border-gray-950 hover:bg-gray-950 transition duration-700  w-64 h-48 text-center py-6">
-                <small class="font-bold">2011 - 2014 (UI DESIGNER)</small>
-                <h5 class="text-green-600 font-bold text-xl">LEAD DESIGNER MUSICSOFT.</h5>
-                <p>All you need to do your best <br> work together in one package <br> works seamlessly computer</p>
-            </div>
+        <div class="border border-gray-800 hover:border-green-600 hover:bg-gray-900 transition-all duration-500 w-full rounded-lg text-center py-8 px-4 group shadow-sm hover:shadow-green-600/10 hover:-translate-y-1">
+            <small class="font-bold text-gray-500 group-hover:text-gray-300">2011 - 2014 (UI DESIGNER)</small>
+            <h5 class="text-green-600 font-bold text-xl mt-3 mb-2">LEAD DESIGNER MUSICSOFT.</h5>
+            <p class="text-sm text-gray-400">All you need to do your best work together in one package works seamlessly computer</p>
         </div>
-
-
-        <div>
-            <div class="border border-gray-950 hover:bg-gray-950 transition duration-700 w-64 h-48 text-center py-6 ">
-                <small class="font-bold">2011 - 2014 (UI DESIGNER)</small>
-                <h5 class="text-green-600 font-bold text-xl">LBRUNO MARS AS.</h5>
-                <p>All you need to do your best <br> work together in one package <br> works seamlessly computer</p>
-            </div>
+        <div class="border border-gray-800 hover:border-green-600 hover:bg-gray-900 transition-all duration-500 w-full rounded-lg text-center py-8 px-4 group shadow-sm hover:shadow-green-600/10 hover:-translate-y-1">
+            <small class="font-bold text-gray-500 group-hover:text-gray-300">2011 - 2014 (UI DESIGNER)</small>
+            <h5 class="text-green-600 font-bold text-xl mt-3 mb-2">LBRUNO MARS AS.</h5>
+            <p class="text-sm text-gray-400">All you need to do your best work together in one package works seamlessly computer</p>
         </div>
         </div>
 
-        <div class="flex flex-wrap justify-around gap-10 mx-10 mt-20">
-
-  <div class="flex flex-col items-center relative h-48">
-    <div class="absolute top-0 flex items-center justify-center text-3xl border-8 border-green-600 border-b-white rounded-full h-32 w-32">
-      <span class="text-3xl font-bold">60<i class="text-sm">%</i></span>
+        <div class="grid grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mt-20 w-full max-w-[1000px] mx-auto px-4">
+  <div class="flex flex-col items-center justify-center group">
+    <div class="flex items-center justify-center text-3xl border-8 border-green-600 border-b-gray-800 rounded-full h-32 w-32 sm:h-40 sm:w-40 transition-transform duration-500 group-hover:scale-110">
+      <span class="text-2xl sm:text-3xl font-bold">60<i class="text-sm not-italic">%</i></span>
     </div>
-    <span class="mt-36 text-center font-bold text-xl">BRANDING DESIGN</span>
+    <span class="mt-6 text-center font-bold text-sm sm:text-lg tracking-wide">BRANDING DESIGN</span>
   </div>
 
-  <div class="flex flex-col items-center relative h-48">
-    <div class="absolute top-0 flex items-center justify-center text-3xl border-8 border-green-600 border-l-white rounded-full h-32 w-32">
-      <span class="text-3xl font-bold">70<i class="text-sm">%</i></span>
+  <div class="flex flex-col items-center justify-center group">
+    <div class="flex items-center justify-center text-3xl border-8 border-green-600 border-l-gray-800 rounded-full h-32 w-32 sm:h-40 sm:w-40 transition-transform duration-500 group-hover:scale-110">
+      <span class="text-2xl sm:text-3xl font-bold">70<i class="text-sm not-italic">%</i></span>
     </div>
-    <span class="mt-36 text-center font-bold text-xl">UI & UX DESIGN</span>
+    <span class="mt-6 text-center font-bold text-sm sm:text-lg tracking-wide">UI & UX DESIGN</span>
   </div>
 
-  <div class="flex flex-col items-center relative h-48">
-    <div class="absolute top-0 flex items-center justify-center text-3xl border-8 border-green-600 border-r-white rounded-full h-32 w-32">
-      <span class="text-3xl font-bold">30<i class="text-sm">%</i></span>
+  <div class="flex flex-col items-center justify-center group">
+    <div class="flex items-center justify-center text-3xl border-8 border-green-600 border-r-gray-800 rounded-full h-32 w-32 sm:h-40 sm:w-40 transition-transform duration-500 group-hover:scale-110">
+      <span class="text-2xl sm:text-3xl font-bold">30<i class="text-sm not-italic">%</i></span>
     </div>
-    <span class="mt-36 text-center font-bold text-xl">WEB DESIGN</span>
+    <span class="mt-6 text-center font-bold text-sm sm:text-lg tracking-wide">WEB DESIGN</span>
   </div>
 
-  <div class="flex flex-col items-center relative h-48">
-    <div class="absolute top-0 flex items-center justify-center text-3xl border-8 border-green-600 border-t-white rounded-full h-32 w-32">
-      <span class="text-3xl font-bold">90<i class="text-sm">%</i></span>
+  <div class="flex flex-col items-center justify-center group">
+    <div class="flex items-center justify-center text-3xl border-8 border-green-600 border-t-gray-800 rounded-full h-32 w-32 sm:h-40 sm:w-40 transition-transform duration-500 group-hover:scale-110">
+      <span class="text-2xl sm:text-3xl font-bold">90<i class="text-sm not-italic">%</i></span>
     </div>
-    <span class="mt-36 text-center font-bold text-xl">ILLUSTRATION</span>
+    <span class="mt-6 text-center font-bold text-sm sm:text-lg tracking-wide">ILLUSTRATION</span>
   </div>
 </div>
         </div>
@@ -207,189 +208,147 @@ DOWNLOAD CV
 
                      <!-- fourth -->
     
-    <div class=" mt-10 w-[1325px] ">
-          <div class="flex justify-center w-auto  ml-10">
-    <div class=" text px-5 ml-14 w-full text-left">
-        <span class="text-xs text-green-600 font-bold">WHAT WE DO</span>
-        <h2 class="text-4xl text-white font-bold">SERVICES AND
+    <div class="py-12 md:py-20 w-full max-w-[1325px] mx-auto px-4 sm:px-6 lg:px-12">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+    <div class="w-full text-center md:text-left">
+        <span class="text-sm text-green-600 font-bold tracking-wider uppercase">WHAT WE DO</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-2">SERVICES AND
             <span class="text-green-600">SOLUTIONS</span>
         </h2>
     </div>
-    <div class="text-center text-white w-full text-lg ml-5">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Sint ratione reprehenderit, error qui enim sit ex provident</p>
+    <div class="w-full text-center md:text-left text-gray-400 text-sm sm:text-base max-w-xl">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit, error qui enim sit ex provident.</p>
     </div>
 </div>
-        <br>
 
-        <div>
-            <div class="flex justify-center gap-8 mx-5 mt-10">
-
-  <div class="group w-80 h-96 border border-gray-950 hover:bg-green-600 hover:text-white transition duration-700 flex flex-col items-center p-4">
-    <img src="https://quomodosoft.com/html/glint/assets/img/icon/service1.svg" class="h-20 mb-4" alt="">
-    <h4 class="text-green-600 font-bold text-2xl group-hover:text-white transition duration-700 text-center">DESIGN PRINCIPLES</h4>
-    <p class="text-gray-500 text-lg mt-2 group-hover:text-white transition duration-700 text-center">Need a project completed by an expert? Let’s go! Access a Human Resources Consultant to answer questions</p>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-10">
+  <div class="group w-full max-w-sm mx-auto border border-gray-800 hover:bg-green-600 transition-all duration-500 flex flex-col items-center p-8 rounded-lg shadow-lg hover:-translate-y-2">
+    <img src="https://quomodosoft.com/html/glint/assets/img/icon/service1.svg" class="h-16 sm:h-20 mb-6 transition-transform group-hover:scale-110" alt="">
+    <h4 class="text-white font-bold text-xl sm:text-2xl text-center mb-4 leading-tight group-hover:text-white transition-colors">DESIGN PRINCIPLES</h4>
+    <p class="text-gray-400 text-sm sm:text-base text-center group-hover:text-green-50 transition-colors">Need a project completed by an expert? Let’s go! Access a Human Resources Consultant to answer questions.</p>
   </div>
 
-  <div class="group w-80 h-96 border border-gray-950 hover:bg-green-600 hover:text-white transition duration-700 flex flex-col items-center p-4">
-    <img src="https://quomodosoft.com/html/glint/assets/img/icon/service2.svg" class="h-20 mb-4" alt="">
-    <h4 class="text-green-600 font-bold text-2xl group-hover:text-white transition duration-700 text-center">UNIQUE VALUES</h4>
-    <p class="text-gray-500 text-lg mt-2 group-hover:text-white transition duration-700 text-center">Need a project completed by an expert? Let’s go! Access a Human Resources Consultant to answer questions</p>
+  <div class="group w-full max-w-sm mx-auto border border-gray-800 hover:bg-green-600 transition-all duration-500 flex flex-col items-center p-8 rounded-lg shadow-lg hover:-translate-y-2">
+    <img src="https://quomodosoft.com/html/glint/assets/img/icon/service2.svg" class="h-16 sm:h-20 mb-6 transition-transform group-hover:scale-110" alt="">
+    <h4 class="text-white font-bold text-xl sm:text-2xl text-center mb-4 leading-tight group-hover:text-white transition-colors">UNIQUE VALUES</h4>
+    <p class="text-gray-400 text-sm sm:text-base text-center group-hover:text-green-50 transition-colors">Need a project completed by an expert? Let’s go! Access a Human Resources Consultant to answer questions.</p>
   </div>
 
-  <div class="group w-80 h-96 border border-gray-950 hover:bg-green-600 hover:text-white transition duration-700 flex flex-col items-center p-4">
-    <img src="https://quomodosoft.com/html/glint/assets/img/icon/service3.svg" class="h-20 mb-4" alt="">
-    <h4 class="text-green-600 font-bold text-2xl group-hover:text-white transition duration-700 text-center">STYLE COMPONENTS</h4>
-    <p class="text-gray-500 text-lg mt-2 group-hover:text-white transition duration-700 text-center">Need a project completed by an expert? Let’s go! Access a Human Resources Consultant to answer questions</p>
+  <div class="group w-full max-w-sm mx-auto border border-gray-800 hover:bg-green-600 transition-all duration-500 flex flex-col items-center p-8 rounded-lg shadow-lg hover:-translate-y-2">
+    <img src="https://quomodosoft.com/html/glint/assets/img/icon/service3.svg" class="h-16 sm:h-20 mb-6 transition-transform group-hover:scale-110" alt="">
+    <h4 class="text-white font-bold text-xl sm:text-2xl text-center mb-4 leading-tight group-hover:text-white transition-colors">STYLE COMPONENTS</h4>
+    <p class="text-gray-400 text-sm sm:text-base text-center group-hover:text-green-50 transition-colors">Need a project completed by an expert? Let’s go! Access a Human Resources Consultant to answer questions.</p>
   </div>
 </div>
-        </div>
     </div>
 
-    <div class="mt-10 w-[1325px] ">
-        <div>
-            <div>
-                   <div class="flex justify-center  ml-10">
-    <div class=" text px-5 ml-14 w-full text-left">
-        <span class="text-xs text-green-600 font-bold">WHAT WE DO</span>
-        <h2 class="text-4xl text-white font-bold">LATEST WORKING
+    <div class="py-12 md:py-20 w-full max-w-[1325px] mx-auto px-4 sm:px-6 lg:px-12 ">
+        <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+    <div class="w-full text-center md:text-left">
+        <span class="text-sm text-green-600 font-bold tracking-wider uppercase">WHAT WE DO</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-2">LATEST WORKING
             <span class="text-green-600">SOLUTIONS</span>
         </h2>
     </div>
-    <div class="text-center text-white w-full text-lg ml-5">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Sint ratione reprehenderit, error qui enim sit ex provident</p>
+    <div class="w-full text-center md:text-left text-gray-400 text-sm sm:text-base max-w-xl">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit, error qui enim sit ex provident.</p>
     </div>
 </div>
 
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 w-full mt-10">
+            <div class="overflow-hidden rounded-lg group aspect-[4/3]"><img class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" src="https://quomodosoft.com/html/glint/assets/img/project/project3.png" alt="Project 1"></div>
+            <div class="overflow-hidden rounded-lg group aspect-[4/3]"><img class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" src="https://quomodosoft.com/html/glint/assets/img/project/project4.png" alt="Project 2"></div>
+            <div class="overflow-hidden rounded-lg group aspect-[4/3]"><img class="w-full h-full object-cover transform transition-transform duration-700 group-hover:scale-110" src="https://quomodosoft.com/html/glint/assets/img/project/project2.png" alt="Project 3"></div>
         </div>
-
-        <div class="flex  justify-center gap-5 mt-10 w-[1325px] ml-3">
-            <img src="https://quomodosoft.com/html/glint/assets/img/project/project3.png " alt=""><br class="">
-            <img class=" " src="https://quomodosoft.com/html/glint/assets/img/project/project4.png" alt=""><br class="">
-            <img class=" " src="https://quomodosoft.com/html/glint/assets/img/project/project2.png" alt=""><br class="">
-        </div>
-            </div>
-        </div>
-        <div class="mt-5 w-[1340px]">
-             <div class="flex justify-center w-auto  ml-10">
-    <div class=" text px-5 ml-14 w-full text-left">
-        <span class="text-xs text-green-600 font-bold">TESTIMONIALS</span>
-        <h2 class="text-4xl text-white font-bold">HAPPY CLIENTS TO
-            <span class="text-green-600">SAYS</span>
+    </div>
+        <div class="py-12 md:py-20 w-full max-w-[1325px] mx-auto px-4 sm:px-6 lg:px-12">
+             <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+    <div class="w-full text-center md:text-left">
+        <span class="text-sm text-green-600 font-bold tracking-wider uppercase">TESTIMONIALS</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-2">HAPPY CLIENTS
+            <span class="text-green-600">SAY</span>
         </h2>
     </div>
-    <div class="text-center text-white w-full text-lg ml-5">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Sint ratione reprehenderit, error qui enim sit ex provident</p>
+    <div class="w-full text-center md:text-left text-gray-400 text-sm sm:text-base max-w-xl">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit, error qui enim sit ex provident.</p>
     </div>
 </div>
-        </div>  
-        <br><br>
 
-        <div class="w-[1340px]">
-            <div class=" flex w-[920px]  h-56  ml-32 gap-4 mt-10">
-                <div class="ml-32  mb-5">
-                    <img class="rounded-full size-24 mt-5 " src="asets/third.jpeg" alt="">
+            <div class="flex flex-col sm:flex-row items-center sm:items-start bg-gray-900 rounded-xl p-8 sm:p-12 w-full max-w-4xl mx-auto gap-8 shadow-2xl relative mt-10 border border-gray-800 hover:border-green-600/50 transition-colors duration-500">
+                <div class="shrink-0 relative">
+                    <img class="rounded-full w-24 h-24 sm:w-32 sm:h-32 object-cover border-4 border-green-600 shadow-xl" src="asets/third.jpeg" alt="Client" onerror="this.src='https://ui-avatars.com/api/?name=Jack+Metiyo&background=16a34a&color=fff'">
                 </div>
-                <div class="w-[790px]  h-28">
-                    <img class="ml-38" src="https://quomodosoft.com/html/glint/assets/img/icon/quote.png" alt=""><br>
-                    <h4 class="font-bold text-lg text-white">
-                        GILROY IS A GREAT AND SUPER-PROFESSIONAL SERVICE PROVIDER, WHICH BROUGHT NEW TECHNOLOGIES, NEW METHODOLOGY, AND A FRESH PERSPECTIVE TO OUR PROJECT.
-                    </h4> <br>
-                    <p class="font-bold text-white  ">Jack Metiyo Shina, NYC, USA</p>
+                <div class="w-full text-center sm:text-left space-y-4">
+                    <img class="mx-auto sm:mx-0 w-8 h-8 opacity-50" src="https://quomodosoft.com/html/glint/assets/img/icon/quote.png" alt="Quote">
+                    <h4 class="font-semibold text-lg sm:text-xl text-gray-200 leading-relaxed italic">
+                        "GILROY IS A GREAT AND SUPER-PROFESSIONAL SERVICE PROVIDER, WHICH BROUGHT NEW TECHNOLOGIES, NEW METHODOLOGY, AND A FRESH PERSPECTIVE TO OUR PROJECT."
+                    </h4>
+                    <p class="font-bold text-green-500 uppercase tracking-widest text-sm pt-4">Jack Metiyo Shina <span class="text-gray-500 font-normal ml-2">| NYC, USA</span></p>
                 </div>
             </div>
         </div>
         <br>
 
-        <div>
-        <div class="mt-5 w-[1340px]">
-            <div>
-             <div class="flex justify-center w-auto  ml-10">
-    <div class=" text px-5 ml-14 w-full text-left">
-        <span class="text-xs text-green-600 font-bold">SPECIFICATIONS</span>
-        <h2 class="text-4xl text-white font-bold">ALL OUR PAYMENT
+        <div class="py-12 md:py-20 w-full max-w-[1325px] mx-auto px-4 sm:px-6 lg:px-12">
+             <div class="flex flex-col md:flex-row justify-between items-center gap-8 mb-12">
+    <div class="w-full text-center md:text-left">
+        <span class="text-sm text-green-600 font-bold tracking-wider uppercase">SPECIFICATIONS</span>
+        <h2 class="text-3xl sm:text-4xl lg:text-5xl font-bold mt-2">ALL OUR PAYMENT
             <span class="text-green-600">OPTIONS</span>
         </h2>
     </div>
-    <div class="text-center text-white w-full text-lg ml-5">
-        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> Sint ratione reprehenderit, error qui enim sit ex provident</p>
+    <div class="w-full text-center md:text-left text-gray-400 text-sm sm:text-base max-w-xl">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ratione reprehenderit, error qui enim sit ex provident.</p>
     </div>
 </div>
+
+         <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 w-full mt-10"> 
+                <div class="group w-full max-w-sm mx-auto bg-gray-900 border border-gray-800 hover:border-green-600 hover:-translate-y-2 transition-all duration-500 rounded-2xl overflow-hidden shadow-xl flex flex-col">
+                    <div class="p-8 pb-4 flex-grow flex flex-col justify-center items-center text-center">
+                        <img class="h-16 mb-6 group-hover:scale-110 transition-transform" src="https://quomodosoft.com/html/glint/assets/img/icon/service1.svg" alt="">
+                        <h4 class="text-white font-bold text-2xl mb-2">INFLUENCER</h4>
+                        <p class="text-gray-400 text-sm">Best For Small Investors</p>
+                    </div>
+                    <div class="bg-gray-800 group-hover:bg-green-600 transition-colors duration-500 p-8 text-center mt-auto">
+                        <div class="flex items-center justify-center gap-1 mb-6">
+                            <span class="text-white font-bold text-4xl">$104</span>
+                            <span class="text-gray-300 group-hover:text-green-100 text-sm mt-2">/ Month</span>
+                        </div>
+                        <button class="w-full bg-green-600 group-hover:bg-green-800 group-hover:shadow-inner transition-all duration-300 text-white py-3 rounded-lg font-bold">READ MORE</button>
+                    </div>
+                </div>
+
+                <div class="group w-full max-w-sm mx-auto bg-gray-900 border border-green-600 hover:-translate-y-2 transition-all duration-500 rounded-2xl overflow-hidden shadow-2xl flex flex-col relative">
+                    <div class="absolute top-0 inset-x-0 h-1 bg-green-600"></div>
+                    <div class="absolute top-4 right-4 bg-green-600 text-xs font-bold px-3 py-1 rounded-full">POPULAR</div>
+                    <div class="p-8 pb-4 flex-grow flex flex-col justify-center items-center text-center">
+                        <img class="h-16 mb-6 group-hover:scale-110 transition-transform" src="https://quomodosoft.com/html/glint/assets/img/icon/service2.svg" alt="">
+                        <h4 class="text-white font-bold text-2xl mb-2">AGENCY</h4>
+                        <p class="text-gray-400 text-sm">Best For Growing Teams</p>
+                    </div>
+                    <div class="bg-gray-800 group-hover:bg-green-600 transition-colors duration-500 p-8 text-center mt-auto">
+                        <div class="flex items-center justify-center gap-1 mb-6">
+                            <span class="text-white font-bold text-4xl">$204</span>
+                            <span class="text-gray-300 group-hover:text-green-100 text-sm mt-2">/ Month</span>
+                        </div>
+                        <button class="w-full bg-green-600 group-hover:bg-green-800 group-hover:shadow-inner transition-all duration-300 text-white py-3 rounded-lg font-bold">READ MORE</button>
+                    </div>
+                </div>
+
+                <div class="group w-full max-w-sm mx-auto bg-gray-900 border border-gray-800 hover:border-green-600 hover:-translate-y-2 transition-all duration-500 rounded-2xl overflow-hidden shadow-xl flex flex-col">
+                    <div class="p-8 pb-4 flex-grow flex flex-col justify-center items-center text-center">
+                        <img class="h-16 mb-6 group-hover:scale-110 transition-transform" src="https://quomodosoft.com/html/glint/assets/img/icon/service3.svg" alt="">
+                        <h4 class="text-white font-bold text-2xl mb-2">ENTERPRISE</h4>
+                        <p class="text-gray-400 text-sm">Best For Large Corps</p>
+                    </div>
+                    <div class="bg-gray-800 group-hover:bg-green-600 transition-colors duration-500 p-8 text-center mt-auto">
+                        <div class="flex items-center justify-center gap-1 mb-6">
+                            <span class="text-white font-bold text-2xl tracking-wide uppercase">LET'S CHAT</span>
+                        </div>
+                        <button class="w-full bg-green-600 group-hover:bg-green-800 group-hover:shadow-inner transition-all duration-300 text-white py-3 rounded-lg font-bold">CONTACT US</button>
+                    </div>
+                </div>
             </div>
-        </div>
-
-         <div class="flex justify-center gap-5 mt-10 w-[1340px]"> 
-                <div class="group w-92 h-[500px]  border border-gray-950 hover:bg-green-600 hover:text-white transition duration-700">
-                    <div class="flex-col  ml-16">
-                        <div class="h-52 mt-10">
-                    <div class="ml-10"> 
-                         <img class="ml-2 " src="https://quomodosoft.com/html/glint/assets/img/icon/service1.svg" alt="">
-                    </div>
-                    <br><br>
-                    <div class="w-68 h-28 ">
-                        <h4 class="text-green-600 font-bold mr-7 text-2xl group-hover:text-white transition duration-700 text-center">INFLUENCER</h4>
-                        <P class="text-gray-500 text-lg mr-7 group-hover:text-white transition duration-700 text-center">Best For Small Investors</P>
-                    </div>
-                    </div>
-                    <hr class="mr-2">
-                    <div class="justify-center text-center mt-10">
-                        <h3 class="text-green-600 font-bold text-2xl group-hover:text-white transition duration-700 mr-16">$104</h3>
-                        <h5 class="text-gray-500 text-lg  group-hover:text-white transition duration-700 mr-16">Per Month</h5>
-                    </div>
-                    <div class="mt-7">
-                        <button class=" bg-green-600 group-hover:bg-green-800 transition duration-700 px-10 py-4 rounded font-bold ">READ MORE</button>
-                    </div>
-                </div>
-                </div>
-
-                  <div class="group w-92 h-[500px]  border border-gray-950 hover:bg-green-600 hover:text-white transition duration-700">
-                    <div class="flex-col  ml-16">
-                        <div class="h-52 mt-10">
-                    <div> 
-                         <img class="ml-10" src="https://quomodosoft.com/html/glint/assets/img/icon/service2.svg" alt="">
-                    </div>
-                    <br><br>
-                    <div class="w-68 h-28 ">
-                        <h4 class="text-green-600 font-bold mr-7 text-2xl group-hover:text-white transition duration-700 text-center">AGENCY</h4>
-                        <P class="text-gray-500 text-lg mr-7 group-hover:text-white transition duration-700 text-center">Best For Small Investors</P>
-                    </div>
-                    </div>
-                    <hr class="mr-10">
-                    <div class="justify-center text-center mt-10">
-                        <h3 class="text-green-600 font-bold text-2xl group-hover:text-white transition duration-700 mr-16">$204</h3>
-                        <h5 class="text-gray-500 text-lg  group-hover:text-white transition duration-700 mr-16">Per Month</h5>
-                    </div>
-                      <div class="mt-7">
-                        <button class=" bg-green-600 group-hover:bg-green-800 transition duration-700 px-10 py-4 rounded font-bold">READ MORE</button>
-                    </div>
-                </div>
-                </div>
-
-                 <div class="group w-92 h-[500px]  border border-gray-950 hover:bg-green-600 hover:text-white transition duration-700">
-                    <div class="flex-col  ml-16">
-                        <div class="h-52 mt-10">
-                    <div> 
-                         <img class="ml-10" src="https://quomodosoft.com/html/glint/assets/img/icon/service3.svg" alt="">
-                    </div>
-                    <br><br>
-                    <div class="w-68 h-28 ">
-                        <h4 class="text-green-600 font-bold mr-7 text-2xl group-hover:text-white transition duration-700 text-center">ENTERPRISE</h4>
-                        <P class="text-gray-500 text-lg mr-7 group-hover:text-white transition duration-700 text-center">Best For Small Investors</P>
-                    </div>
-                    </div>
-                    <hr class="mr-10">
-                    <div class="justify-center text-center mt-10">
-                        <h3 class="text-green-600 font-bold text-2xl group-hover:text-white transition duration-700 mr-16">LET'S CHART</h3>
-                        <h5 class="text-gray-500 text-lg  group-hover:text-white transition duration-700 mr-16">Per Month</h5>
-                    </div>
-                      <div class="mt-7">
-                        <button class=" bg-green-600 group-hover:bg-green-800 transition duration-700 px-10 py-4 rounded font-bold">READ MORE</button>
-                    </div>
-                </div>
-                </div>
-
-            </div>
-</div>
-
         </div>
      
 </div>
@@ -397,44 +356,29 @@ DOWNLOAD CV
 
 </body>
 
-<footer>
-    
+<footer class="bg-gray-900 py-10 mt-20 border-t border-gray-800">
+    <div class="w-full max-w-[1325px] mx-auto px-4 sm:px-6 lg:px-12 flex flex-col md:flex-row justify-between items-center gap-8">
+        <!-- Logo -->
+        <div class="shrink-0 group">
+            <img class="h-10 w-auto group-hover:opacity-80 transition-opacity" src="https://quomodosoft.com/html/glint/assets/img/logo/logo.png" alt="Logo">
+        </div>
+        
+        <!-- Navigation Links -->
+        <ul class="flex flex-wrap justify-center items-center gap-6 text-sm sm:text-base font-semibold text-gray-300">
+            <li><a href="#" class="hover:text-green-500 transition-colors">HOME</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">ABOUT</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">SERVICES</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">PORTFOLIO</a></li>
+            <li><a href="#" class="hover:text-green-500 transition-colors">PAGES</a></li>
+        </ul>
 
-
-
- <nav>
-    <div class="flex items-center gap-4 ml-20 mt-5 ">
-        <div class="flex w-full">
-            <img src="https://quomodosoft.com/html/glint/assets/img/logo/logo.png" alt="">
-      <div class="">
-            <i class="fa-solid fa-bars mt-4 ml-48  "></i>
-            </div>
-  <div class="flex justify-center w-full mr-40 text-white">
-    <ul class="flex items-center gap-4">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#">ABOUT</a></li>
-        <li><a href="#">SERVICES</a></li>
-        <li><a href="#">PORTFOLIO</a></li>
-        <li><a href="#">PAGES</a></li>
-    </ul>
-
-    <div class=" flex items-end gap-4  ml-96 mb-5">
-                <i class="fa-brands fa-facebook-f cursor-pointer hover:bg-green-600 p-2"></i>
-                <i class="fa-brands fa-twitter cursor-pointer hover:bg-green-600 p-2"></i>
-                <i class="fa-brands fa-linkedin-in cursor-pointer hover:bg-green-600 p-2"></i>
-                <i class="fa-brands fa-instagram cursor-pointer hover:bg-green-600 p-2"></i>
-                
-            </div>
-</div>
-
-        <div class="ml-52 hidden ">
-            <form>
-                <i class="fa-solid fa-magnifying-glass text-green-600"></i>
-                    <input placeholder="Search" type="search"> 
-                
-            </form>
-        </div> 
+        <!-- Social Icons -->
+        <div class="flex items-center gap-4 text-gray-400">
+            <a href="#" class="hover:text-white hover:-translate-y-1 hover:bg-green-600 rounded-full transition-all w-10 h-10 flex items-center justify-center bg-gray-800 shadow-lg"><i class="fa-brands fa-facebook-f"></i></a>
+            <a href="#" class="hover:text-white hover:-translate-y-1 hover:bg-green-600 rounded-full transition-all w-10 h-10 flex items-center justify-center bg-gray-800 shadow-lg"><i class="fa-brands fa-twitter"></i></a>
+            <a href="#" class="hover:text-white hover:-translate-y-1 hover:bg-green-600 rounded-full transition-all w-10 h-10 flex items-center justify-center bg-gray-800 shadow-lg"><i class="fa-brands fa-linkedin-in"></i></a>
+            <a href="#" class="hover:text-white hover:-translate-y-1 hover:bg-green-600 rounded-full transition-all w-10 h-10 flex items-center justify-center bg-gray-800 shadow-lg"><i class="fa-brands fa-instagram"></i></a>
+        </div>
     </div>
-</nav>
 </footer>
 </html>
