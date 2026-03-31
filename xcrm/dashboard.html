@@ -1,0 +1,925 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="./output.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon/fonts/remixicon.css" rel="stylesheet">
+    
+</head>
+
+<body>
+    <div>
+        <header>
+            <div>
+                <div class="flex flex-row">
+                    <div id="img1" class="w-[70px] h-[56px] bg-gray-800">
+                        <img class="w-[19px] h-[22px] mt-4 ml-7 hidden lg:block "
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACQAAAAoCAYAAACWwljjAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkU1MzJERjZCN0M4QTExRUE4RjYxRjYyMjZCNjRFRDk2IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkU1MzJERjZDN0M4QTExRUE4RjYxRjYyMjZCNjRFRDk2Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RTUzMkRGNjk3QzhBMTFFQThGNjFGNjIyNkI2NEVEOTYiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RTUzMkRGNkE3QzhBMTFFQThGNjFGNjIyNkI2NEVEOTYiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz4/A+LzAAABeElEQVR42uyX3U3DMBDH7xwP0A3ICHlGArIBHiEbFCZoNyAbNKOkIPHcTgDdoBmgNWdTEDZ5SGwHR8In5Tuyfrn730dQ3lQCEFYgoQAPw5cGf17TunLkEu+0PXLaPRFMDvEtV45h+mQuRlFigZbqQjGFAtoZH3pdFXGBEFrjOnOXQRigswUkoYwJ1AE3Q0ar3sUDQqixbY7fzimr3KemMW/vMKiNOycQ8bLM8s7FlrGAtvjcrK128eBbaF2BDpTaRmhIOws6rHwlyZ1gSCfUTI+Wdja0X/x1pd6SZwp8bXY9oRIBSshgD3VawJZmLjBCTwyBjA8BUandk01fMJuQDZ//0ocalCRVXtWfMmj7QDTMbbWk9+rQEwiOHllUNn0KWMAENkrU2isneJsKZpCHdG86wz2Fx7voOQHp4SrDK4VCT0vf4X80kMPfwaTGYGaWgBJQjPFj0n/+FLKkoZ6ZSaaQJaB/D3SYEc9eAanRdD8DGOWY9YcAAwBpymyPBcWRMwAAAABJRU5ErkJggg=="
+                            alt="X CRM Logo">
+                    </div>
+                    <button id="btn" class="ml-3">
+                        <i>
+                            <span class="material-symbols-outlined mt-3">
+                                menu
+                            </span>
+                        </i>
+                    </button>
+                    <div class="ml-5 mt-3">
+                        <form>
+                            <div class="relative w-full max-w-sm">
+                                <i
+                                    class="fas fa-search absolute left-4 top-1/2 transform -translate-y-1/2 text-gray-400"></i>
+                                <input class="w-full bg-gray-50 rounded-2xl pl-10 pr-4 py-2 outline-none text-sm  "
+                                    placeholder="Search leads, campaigns..." type="search">
+                            </div>
+                    </div>
+                    </form>
+
+                    <div class="flex flex-row justify-end gap-8 flex-1 text-gray-400">
+
+                        <div>
+                            <i class="fas fa-expand mt-5"></i>
+                        </div>
+
+                        <div>
+                            <i class="fas fa-bell mt-5"></i>
+                        </div>
+                        <div>
+                            <button class="flex items-center gap-4 mt-2">
+                                <img class="w-[32px] h-[32px] rounded-full mt-1"
+                                    src="https://res.cloudinary.com/dpbvh6471/image/upload/v1757027734/uploads/llorh59rb8vuxxd3fdi6.png"
+                                    alt="">
+                                <span class="text-sm">Admin</span>
+                                <i class="fas fa-chevron-down"></i>
+                            </button>
+                        </div>
+
+                        <div>
+                            <button>
+                                <i class="fas fa-cog mt-5"></i>
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+
+    </div>
+    </header>
+
+    <div class="flex min-h-screen w-full bg-white">
+
+        <!-- Sidebar -->
+        <div id="main" class="flex flex-col bg-gray-800 w-[70px] text-gray-500 hidden lg:block ">
+            <div class="ml-6 mt-20">
+                <ul>
+                    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">dashboard</span></li>
+                    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">groups</span></li>
+                    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">person</span></li>
+                    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">campaign</span></li>
+                    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">shopping_cart</span></li>
+                    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">storefront</span></li>
+                    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">person_search</span></li>
+                    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">inventory</span></li>
+                    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">settings</span></li>
+                </ul>
+            </div>
+        </div>
+
+<!-- <script type="module">
+  import sidebarData from './sidebarData.js';
+
+  const menu = document.getElementById("sidebarMenu");
+
+  // Dynamically add sidebar items (without loops, just manual insert)
+  menu.innerHTML = `
+    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">${sidebarData[0].label}</span></li>
+    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">${sidebarData[1].icon}</span></li>
+    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">${sidebarData[2].icon}</span></li>
+    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">${sidebarData[3].icon}</span></li>
+    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">${sidebarData[4].icon}</span></li>
+    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">${sidebarData[5].icon}</span></li>
+    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">${sidebarData[6].icon}</span></li>
+    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">${sidebarData[7].icon}</span></li>
+    <li class="cursor-pointer"><span class="material-symbols-outlined mt-8">${sidebarData[8].icon}</span></li>
+  `;
+</script> -->
+        <div id="hidden" class="w-[200px] h-auto bg-gray-800 p-4 justify-center items-center flex-col   hidden  ">
+            <div class="w-[208px] h-[56px]">
+                <img class="w-[91px] h-[32px] ml-5 mt-2"
+                    src="https://xcrm.live/static/media/X%20CRM%20LOGO-01.01abab317ae1ea4da557.png" alt="">
+            </div>
+            <div class="ml-5">
+                <ul class="text-gray-500 p-5 m-5">
+
+                    <li class="cursor-pointer mb-20">
+                       ${sidebarData.Dashboard.lable}
+                    </li>
+
+                    <li class="mb-5">
+                        <select class="w-32  rounded p-2 text-gray-500 bg-gray-800 cursor-pointer">
+                            <option value="role">Roles</option>
+                            <option value="Create">Create Roles</option>>
+                            <option value="All">All Role</option>
+                        </select>
+                    </li>
+
+                    <li class="mb-5">
+                        <select class="w-32  rounded p-2 text-gray-500 bg-gray-800 cursor-pointer">
+                            <option value="Users">Users</option>
+                            <option value="all users">All USers</option>>
+                            <option value="reg">User Registration</option>
+                        </select>
+                    </li>
+
+                    <li class="mb-5">
+                        <select class="w-32  rounded p-2 text-gray-500 bg-gray-800 cursor-pointer">
+                            <option value="compg">Compaigns</option>
+                            <option value="all compg">All Compaigns</option>>
+                            <option value="create">Create Compaigns</option>
+                        </select>
+                    </li>
+
+                    <li class="mb-5">
+                        <select class="w-32  rounded p-2 text-gray-500 bg-gray-800 cursor-pointer">
+                            <option value="orders"> Orders</option>
+                            <option value="all orders">All Orders</option>>
+                            <option value="new">Create New Orders</option>
+                        </select>
+                    </li>
+
+
+                    <li class="mb-5">
+                        <select class="w-32  rounded p-2 text-gray-500 bg-gray-800 cursor-pointer">
+                            <option value="leads"> Leads</option>
+                            <option value="master">Master Leads(Leads Center)</option>>
+                            <option value="cleads">Clint Leads</option>
+                            <option value="assigns">Assigns Leads</option>
+                            <option value="add">Add Leads</option>
+                        </select>
+                    </li>
+                    <li class="mb-5">
+                        <select class="w-32  rounded p-2 text-gray-500 bg-gray-800 cursor-pointer">
+                            <option value="prod"> Product</option>
+                            <option value=" create">Create Product</option>>
+                            <option value="all">All Products</option>
+                            <option value="all sales">All Sales</option>
+                        </select>
+                    </li>
+
+                    <li class="mb-5">
+                        <select class="w-32  rounded p-2 text-gray-500 bg-gray-800 cursor-pointer">
+                            <option value="settings"> Settings</option>
+                            <option value=" email">Email Template</option>>
+                            <option value="send">Send Email</option>
+                            <option value="action">Email Action</option>
+                            <option value="notif">Notifications</option>
+                            <option value="activity">Activity Logs</option>
+                        </select>
+                    </li>
+
+                </ul>
+            </div>
+        </div>
+
+        <div class="flex-1 p-8 bg-white min-h-screen">
+
+            <div class="flex flex-col gap-6">
+
+                <div>
+                    <h4 class="text-3xl font-bold text-gray-800">Dashboard</h4>
+                </div>
+
+                <div>
+                    <div class="flex flex-row items-center gap-3">
+                        <span class="text-sm font-semibold text-gray-700">Data Range : </span>
+                        <select
+                            class="w-32 border border-gray-300 rounded p-2 text-gray-700 bg-gray-50 outline-none  cursor-pointer ">
+                            <option value="Today">Today</option>
+                            <option value="yesterday">Yesterday</option>
+                            <option value="This Week">This Week</option>
+                            <option value="This Month">This Month</option>
+                            <option value="This Year">This Year</option>
+                            <option value="Custom">Custom</option>
+                            <option value="All Time">All Time</option>
+                        </select>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 py-4 w-full h-auto">
+
+                <!-- one -->
+
+                <!-- <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+`<p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">
+  ${cardData.orders}
+</p>`                            <h3 class="text-4xl font-bold text-gray-800">0</h3>
+                        </div>
+                        <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+                            <i class="fas fa-layer-group text-xl"></i>
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div> -->
+
+
+<!-- one -->
+<div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+    <div class="flex justify-between items-start">
+        <div class="flex flex-col gap-2">
+            <!-- Dynamic title from mock data -->
+            <p id="+" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+            <!-- Dynamic value from mock data -->
+            <h3 id="ordersValue" class="text-4xl font-bold text-gray-800"></h3>
+        </div>
+        <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+            <i class="fas fa-layer-group text-xl"></i>
+        </div>
+    </div>
+    <hr class="border-gray-100 my-5">
+    <div class="flex items-center gap-3">
+        <span class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+            0%
+        </span>
+        <span class="text-sm text-gray-400 font-medium">
+            From previous period
+        </span>
+    </div>
+</div>
+
+<!-- Script to fill dynamic data -->
+<script type="module">
+  import { cardData } from './sidebarData.js';
+
+  // Fill card after DOM is ready
+  window.addEventListener("DOMContentLoaded", () => {
+    document.getElementById("ordersTitle").textContent = cardData.orders.title;
+    document.getElementById("ordersValue").textContent = cardData.orders.value;
+  });
+</script>
+
+<!-- 
+<script type="module">
+  import { cardData } from './mockData.js';
+
+  window.addEventListener("DOMContentLoaded", () => {
+    const container = document.getElementById('cardContainer');
+
+    container.innerHTML = `
+      <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+        <div class="flex justify-between items-start">
+          <div class="flex flex-col gap-2">
+            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">
+              ${cardData.orders.title}
+            </p>
+            <h3 class="text-4xl font-bold text-gray-800">
+              ${cardData.orders.value}
+            </h3>
+          </div>
+          <div class="w-10 h-10 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+            <i class="fas fa-layer-group text-xl"></i>
+          </div>
+        </div>
+        <hr class="border-gray-100 my-5">
+        <div class="flex items-center gap-3">
+          <span class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+            0%
+          </span>
+          <span class="text-sm text-gray-400 font-medium">
+            From previous period
+          </span>
+        </div>
+      </div>
+    `;
+  });
+</script> -->
+
+                <!-- two -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL USERS</p>
+                            <h3 class="text-4xl font-bold text-gray-800">52</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+                            <i class="fas fa-user text-xl"></i>
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+
+                <!-- three -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL ACTIVES</p>
+                            <h3 class="text-4xl font-bold text-gray-800">52</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+                            <i class="fas fa-user-cog text-xl"></i>
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+                <!-- four -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL BLOCKED</p>
+                            <h3 class="text-4xl font-bold text-gray-800">0</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+                <!-- five -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL LEADS</p>
+                            <h3 class="text-4xl font-bold text-gray-800">92048</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+                            <i class="fas fa-bars text-xl"></i>
+
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+                <!-- six -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">ASSIGNED LEADXS</p>
+                            <h3 class="text-4xl font-bold text-gray-800">9431</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+                <!-- seven -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">UNASSIGNED LEADS</p>
+                            <h3 class="text-4xl font-bold text-gray-800">82617</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+                            <i class="fas fa-user-times text-xl"></i>
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+                <!-- eight -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL PRODUCTS</p>
+                            <h3 class="text-4xl font-bold text-gray-800">1</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+                <!-- nine -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL SALES</p>
+                            <h3 class="text-4xl font-bold text-gray-800">6</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+                            <i class="fas fa-dollar-sign text-xl"></i>
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+                <!-- ten -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL COMPAIGNS</p>
+                            <h3 class="text-4xl font-bold text-gray-800">12</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
+
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+                <!-- eleven -->
+                <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
+                    <div class="flex justify-between items-start">
+                        <div class="flex flex-col gap-2">
+                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">LEADS WITH WORK</p>
+                            <h3 class="text-4xl font-bold text-gray-800">3126</h3>
+                        </div>
+                        <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-blue-500">
+                            <i class="fas fa-check-circle text-xl"></i>
+                        </div>
+                    </div>
+                    <hr class="border-gray-100 my-5">
+                    <div class="flex items-center gap-3">
+                        <span
+                            class="inline-flex items-center gap-1 bg-blue-50 text-blue-600 text-xs font-bold px-2 py-1 rounded-md">
+                            <i class="fas fa-arrow-trend-up text-[10px]"></i>
+                            0%
+                        </span>
+
+                        <span class="text-sm text-gray-400 font-medium">
+                            From previous period
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+
+            </div>
+
+            <div>
+                <div class="flex flex-col lg:flex-row gap-6 mt-10">
+
+                    <!-- first -->
+
+                    <div class="flex-1 w-full lg:w-1/3 min-h-[524px] bg-gray-50 text-gray-400 p-4 border rounded-2xl">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold text-xl text-black">Recent Activity Feed</h4>
+                            <div class="flex items-center gap-4">
+                                <button class="flex items-center text-blue-700">
+                                    View All
+                                    <i class="ri-arrow-right-line ms-1"></i>
+                                </button>
+                                <div class="relative w-8 h-8 flex items-center justify-center">
+                                    <i class="fas fa-ellipsis-v text-gray-400 absolute"></i>
+                                    <select
+                                        class="w-full h-full absolute inset-0 opacity-0 cursor-pointer z-10 text-gray-500 bg-gray-800">
+                                        <option value="sale">Sales Report</option>
+                                        <option value="exp">Export Report</option>
+                                        <option value="prof">Profile</option>
+                                        <option value="act">Action</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+                            <ul>
+                                <li class="w-full min-h-[72px] bg-white-100 text-black p-2 border rounded-2xl mt-5">
+                                    <div>
+                                        <div class="flex justify-between text-gray-600">
+                                            <span>Mar 30, 2026
+                                                <small class="text-xs">11:40 PM</small>
+                                            </span>
+
+                                            <span class="border rounded-2xl bg-gray-200 p-0.5 mt-1">adminn admin</span>
+                                        </div>
+                                        <p class="text-gray-400">User logged in successfully</p>
+                                    </div>
+                                </li>
+                                <li
+                                    class="w-[312px] h-[72px] bg-white-100 text-black p-2 border rounded-2xl ml-2 mt-9 ">
+                                    <div>
+                                        <div class="flex justify-between text-gray-600">
+                                            <span>Mar 30, 2026
+                                                <small class="text-xs">11:40 PM</small>
+                                            </span>
+
+                                            <span class="border rounded-2xl bg-gray-200 p-0.5 mt-1">adminn admin</span>
+                                        </div>
+                                        <p class="text-gray-400">User logged in successfully</p>
+                                    </div>
+                                </li>
+                                <li class="w-[312px] h-[72px] bg-white-100 text-black p-2 border rounded-2xl ml-2 mt-9">
+                                    <div>
+                                        <div class="flex justify-between text-gray-600">
+                                            <span>Mar 30, 2026
+                                                <small class="text-xs">11:40 PM</small>
+                                            </span>
+
+                                            <span class="border rounded-2xl bg-gray-200 p-0.5 mt-1">adminn admin</span>
+                                        </div>
+                                        <p class="text-gray-400">User logged in successfully</p>
+                                    </div>
+                                </li>
+                                <li class="w-full min-h-[72px] bg-white-100 text-black p-2 border rounded-2xl mt-5">
+                                    <div>
+                                        <div class="flex justify-between text-gray-600">
+                                            <span>Mar 30, 2026
+                                                <small class="text-xs">11:40 PM</small>
+                                            </span>
+
+                                            <span class="border rounded-2xl bg-gray-200 p-0.5 mt-1">adminn admin</span>
+                                        </div>
+                                        <p class="text-gray-400">User logged in successfully</p>
+                                    </div>
+                                </li>
+                            </ul>
+
+
+                        </div>
+
+
+
+                    </div>
+
+
+
+                    <!-- second -->
+
+
+                    <div class="flex-1 w-full lg:w-1/3 min-h-[524px] bg-gray-50 text-gray-400 p-4 border rounded-2xl">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold text-xl text-black">Recent Notes</h4>
+                            <div class="flex items-center gap-4">
+                                <button class="flex items-center text-blue-700">
+                                    View All
+                                    <i class="ri-arrow-right-line ms-1"></i>
+                                </button>
+
+                            </div>
+
+                            <!-- one -->
+                        </div>
+                        <div class="h-[475px] overflow-y-auto bg-gray-100 p-4 rounded gap-y-3 ">
+                            <div class="border rounded-xl p-2 bg-cyan-100">
+                                <p class="text-sm text-blue-800">
+                                    They were Jack the owner and they said that not now we are happy and good and then I
+                                    said I would catch up some other time they said okay it is fine and then declined.
+                                </p>
+                                <div class="text-xs gap-4">
+                                    <span class="bg-blue-500 text-white border rounded-lg px-2  ">
+                                        <i class="ri-file-list-line"></i>
+                                        SP36568
+                                    </span>
+                                    <span class="bg-purple-500 text-white border rounded-lg px-2 ml-2">
+                                        SBD Pro
+                                    </span>
+                                    <small class="ml-4">
+                                        <i class="ri-time-line"></i>
+                                        4 days ago
+                                    </small>
+                                </div>
+
+                                <div class="text-xs">
+                                    <small>
+                                        <i class="ri-building-line"></i>
+                                        Keller Williams Realty
+                                    </small>
+                                    <small class="ml-4">
+                                        <i class="ri-phone-line"></i>
+                                        (480) 566-1558
+                                    </small>
+                                </div>
+                                <small class="text-xs">
+                                    <i class="ri-user-line"></i>
+                                    Sudais
+                                    Baheer
+                                </small>
+                            </div>
+
+                            <!-- two -->
+
+                            <div class="border rounded-xl p-2 bg-cyan-100">
+                                <p class="text-sm text-blue-800">
+                                    Called and it has been directed to an auto voicemail and left them a voicemail.
+                                </p>
+                                <div class="text-xs gap-4">
+                                    <span class="bg-blue-500 text-white border rounded-lg px-2  ">
+                                        <i class="ri-file-list-line"></i>
+                                        SP36568
+                                    </span>
+                                    <span class="bg-purple-500 text-white border rounded-lg px-2 ml-2">
+                                        SBD Pro
+                                    </span>
+                                    <small class="ml-4">
+                                        <i class="ri-time-line"></i>
+                                        4 days ago
+                                    </small>
+                                </div>
+
+                                <div class="text-xs">
+                                    <small>
+                                        <i class="ri-building-line"></i>
+                                        Keller Williams Realty
+                                    </small>
+                                    <small class="ml-4">
+                                        <i class="ri-phone-line"></i>
+                                        (480) 566-1558
+                                    </small>
+                                </div>
+                                <small class="text-xs">
+                                    <i class="ri-user-line"></i>
+                                    Sudais
+                                    Baheer
+                                </small>
+                            </div>
+
+                            <!-- three -->
+
+                            <div class="border rounded-xl p-2 bg-cyan-100">
+                                <p class="text-sm text-blue-800">
+                                    Called and the call has been directed to an auto voicemail and EVEN THE VOICEMAIL
+                                    BOX Wwas full
+                                </p>
+                                <div class="text-xs gap-4">
+                                    <span class="bg-blue-500 text-white border rounded-lg px-2  ">
+                                        <i class="ri-file-list-line"></i>
+                                        SP36568
+                                    </span>
+                                    <span class="bg-purple-500 text-white border rounded-lg px-2 ml-2">
+                                        SBD Pro
+                                    </span>
+                                    <small class="ml-4">
+                                        <i class="ri-time-line"></i>
+                                        4 days ago
+                                    </small>
+                                </div>
+
+                                <div class="text-xs">
+                                    <small>
+                                        <i class="ri-building-line"></i>
+                                        Keller Williams Realty
+                                    </small>
+                                    <small class="ml-4">
+                                        <i class="ri-phone-line"></i>
+                                        (480) 566-1558
+                                    </small>
+                                </div>
+                                <small class="text-xs">
+                                    <i class="ri-user-line"></i>
+                                    Sudais
+                                    Baheer
+                                </small>
+                            </div>
+
+                            <!-- four -->
+
+                            <div class="border rounded-xl p-2 bg-cyan-100">
+                                <p class="text-sm text-blue-800">
+                                    Once I got to start introduction of the collaboration they declined the call saying
+                                    that they are not interested and declined
+                                </p>
+                                <div class="text-xs gap-4">
+                                    <span class="bg-blue-500 text-white border rounded-lg px-2  ">
+                                        <i class="ri-file-list-line"></i>
+                                        SP36568
+                                    </span>
+                                    <span class="bg-purple-500 text-white border rounded-lg px-2 ml-2">
+                                        SBD Pro
+                                    </span>
+                                    <small class="ml-4">
+                                        <i class="ri-time-line"></i>
+                                        4 days ago
+                                    </small>
+                                </div>
+
+                                <div class="text-xs">
+                                    <small>
+                                        <i class="ri-building-line"></i>
+                                        Keller Williams Realty
+                                    </small>
+                                    <small class="ml-4">
+                                        <i class="ri-phone-line"></i>
+                                        (480) 566-1558
+                                    </small>
+                                </div>
+                                <small class="text-xs">
+                                    <i class="ri-user-line"></i>
+                                    Sudais
+                                    Baheer
+                                </small>
+                            </div>
+                        </div>
+
+
+
+
+
+                    </div>
+
+
+                    <!-- third -->
+
+
+                    <div class="flex-1 w-full lg:w-1/3 min-h-[524px] bg-gray-50 text-gray-400 p-4 border rounded-2xl">
+                        <div class="flex items-center justify-between">
+                            <h4 class="font-bold text-xl text-black">Lead Reminders</h4>
+                            <div class="flex items-center gap-4">
+                                <button class="flex items-center text-blue-700">
+                                    View All
+                                    <i class="ri-arrow-right-line ms-1"></i>
+                                </button>
+                                <div class="relative w-8 h-8 flex items-center justify-center">
+                                    <i class="fas fa-ellipsis-v text-gray-400 absolute"></i>
+                                    <select
+                                        class="w-full h-full absolute inset-0 opacity-0 cursor-pointer z-10 text-gray-500 bg-gray-800">
+                                        <option value="sale">Sales Report</option>
+                                        <option value="exp">Export Report</option>
+                                        <option value="prof">Profile</option>
+                                        <option value="act">Action</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div>
+
+                            <div class="border rounded-xl p-2 bg-red-500">
+                                <p class="text-sm text-blue-800">
+                                    hello
+                                </p>
+                                <div class="text-xs gap-4">
+                                    <span class="bg-blue-500 text-white border rounded-lg px-2  ">
+                                        reminder testing
+                                    </span>
+                                    <small class="ml-4">
+                                        <i class="ri-time-line"></i>
+                                        Due:
+                                        31/01/2026, 02:51:00
+                                    </small>
+                                </div>
+                                <small class="text-xs">
+                                    <i class="ri-user-line"></i>
+                                    Created by
+                                    adminn
+                                </small>
+                            </div>
+
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+
+        </div>
+
+
+
+
+    </div>
+
+    <script src="work.js"></script>
+    <script src="sidebarData.js"></script>
+</body>
+
+</html>
