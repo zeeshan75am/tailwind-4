@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Dashboard</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+<div class="bg-gray-100 text-black min-h-screen"> 
+  <div class="bg-white text-gray-500 w-[1330px] min-h-screen ml-4 p-4">
+
+    <!-- Top Nav -->
+    <div class="flex justify-between">
+      <h4 class="font-bold text-black">ALL USERS</h4>
+      <nav>
+        <ul class="flex gap-4 text-xs">
+          <li>Dashboard</li>
+          <li>Users</li>
+          <li>All Users</li>
+        </ul>
+      </nav>
+    </div>
+
+    <!-- Filter Section -->
+    <div class="mt-4">
+      <hr class="border-t border-gray-300 my-2">
+      <label class="text-sm">User Type</label>
+      <div class="flex gap-2 mt-2">
+        <select id="roleFilter" class="w-32 border border-gray-300 rounded text-sm">
+          <option value="">All User Type</option>
+          <option value="Manager">Manager</option>
+          <option value="Admin">Admin</option>
+        </select>
+
+        <input 
+          id="searchInput"
+          class="border border-gray-300 rounded px-2 py-1 text-sm" 
+          placeholder="Search Users" 
+          type="search"
+        >
+      </div>
+    </div>
+
+    <!-- Table -->
+    <table id="myTable" class="min-w-full border border-gray-500 text-center mt-4">
+      <thead class="bg-gray-200">
+        <tr>
+          <th class="border px-4 py-2">Id</th>
+          <th class="border px-4 py-2">Name</th>
+          <th class="border px-4 py-2">User Name</th>
+          <th class="border px-4 py-2">Email</th>
+          <th class="border px-4 py-2">Contact No</th>
+          <th class="border px-4 py-2">Website</th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+
+  </div>
+</div>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+  const tbody = document.querySelector('#myTable tbody');
+  let usersData = [];
+
+  // Function to render users using a for loop
+  function renderUsers(users) {
+    tbody.innerHTML = ""; // clear previous rows
+
+    for (let i = 0; i < users.length; i++) {
+      const user = users[i];
+      const tr = document.createElement('tr');
+
+      tr.innerHTML = `
+        <td class="border border-gray-300 px-4 py-2">${user.id}</td>
+        <td class="border border-gray-300 px-4 py-2">${user.name}</td>
+        <td class="border border-gray-300 px-4 py-2">${user.username}</td>
+        <td class="border border-gray-300 px-4 py-2">${user.email}</td>
+        <td class="border border-gray-300 px-4 py-2">${user.phone}</td> 
+        <td class="border border-gray-300 px-4 py-2">${user.website}</td>
+      `;
+
+      tbody.appendChild(tr);
+    }
+  }
+
+  // Fetch data from API
+  fetch('https://jsonplaceholder.typicode.com/users')
+    .then(res => res.json())
+    .then(data => {
+      usersData = data; // store fetched data
+      renderUsers(usersData); // populate table
+    });
+});
+</script>
+
+</body>
+</html>

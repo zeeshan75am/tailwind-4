@@ -254,7 +254,7 @@
     <div class="flex justify-between items-start">
         <div class="flex flex-col gap-2">
             <!-- Dynamic title from mock data -->
-            <p id="+" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+            <p id="ordersTitle" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
             <!-- Dynamic value from mock data -->
             <h3 id="ordersValue" class="text-4xl font-bold text-gray-800"></h3>
         </div>
@@ -277,13 +277,32 @@
 <!-- Script to fill dynamic data -->
 <script type="module">
   import { cardData } from './sidebarData.js';
+  
 
   // Fill card after DOM is ready
   window.addEventListener("DOMContentLoaded", () => {
     document.getElementById("ordersTitle").textContent = cardData.orders.title;
     document.getElementById("ordersValue").textContent = cardData.orders.value;
-    document.getElementById("userValue").textContent = cardData.orders.value;
-    document.getElementById("userValue").textContent = cardData.orders.value;
+    document.getElementById("userTitle").textContent = cardData.users.title;
+    document.getElementById("userValue").textContent = cardData.users.value;
+    document.getElementById("active").textContent = cardData.actives.title;
+    document.getElementById("activeV").textContent = cardData.actives.value;
+    document.getElementById("tBlocked").textContent = cardData.blocked.title;
+    document.getElementById("vBlocked").textContent = cardData.blocked.value;
+    document.getElementById("tLeads").textContent = cardData.total.title;
+  document.getElementById("vLeads").textContent = cardData.total.value;;
+    document.getElementById("tAssigned").textContent = cardData.assigned.title;
+    document.getElementById("vAssigned").textContent = cardData.assigned.value;
+    document.getElementById("tu").textContent = cardData.unassigned.title;
+    document.getElementById("vu").textContent = cardData.unassigned.value;
+    document.getElementById("tp").textContent = cardData.products.title;
+    document.getElementById("vp").textContent = cardData.products.value;
+    document.getElementById("ts").textContent = cardData.sales.title;
+    document.getElementById("vs").textContent = cardData.sales.value;
+    document.getElementById("tc").textContent = cardData.compaigns.title;
+    document.getElementById("vc").textContent = cardData.compaigns.value;
+    document.getElementById("tw").textContent = cardData.work.title;
+    document.getElementById("vw").textContent = cardData.work.value;
   });
 </script>
 
@@ -355,8 +374,8 @@
                 <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col gap-2">
-                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL ACTIVES</p>
-                            <h3 class="text-4xl font-bold text-gray-800">52</h3>
+                            <p id="active" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+                            <h3 id="activeV" class="text-4xl font-bold text-gray-800"></h3>
                         </div>
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
                             <i class="fas fa-user-cog text-xl"></i>
@@ -381,8 +400,8 @@
                 <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col gap-2">
-                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL BLOCKED</p>
-                            <h3 class="text-4xl font-bold text-gray-800">0</h3>
+                            <p id="tBlocked" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+                            <h3 id="vBlocked" class="text-4xl font-bold text-gray-800"></h3>
                         </div>
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
 
@@ -408,8 +427,8 @@
                     <div class="flex justify-between items-start">
 
                         <div class="flex flex-col gap-2">
-                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL LEADS</p>
-                            <h3 class="text-4xl font-bold text-gray-800">92048</h3>
+                            <p id="tLeads" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+                            <h3 id="vLeads" class="text-4xl font-bold text-gray-800"></h3>
                         </div>
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
                             <i class="fas fa-bars text-xl"></i>
@@ -435,8 +454,8 @@
                 <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col gap-2">
-                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">ASSIGNED LEADXS</p>
-                            <h3 class="text-4xl font-bold text-gray-800">9431</h3>
+                            <p id="tAssigned" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+                            <h3 id="vAssigned" class="text-4xl font-bold text-gray-800"></h3>
                         </div>
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
 
@@ -461,8 +480,8 @@
                 <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col gap-2">
-                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">UNASSIGNED LEADS</p>
-                            <h3 class="text-4xl font-bold text-gray-800">82617</h3>
+                            <p id="tu" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+                            <h3 id="vu" class="text-4xl font-bold text-gray-800"></h3>
                         </div>
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
                             <i class="fas fa-user-times text-xl"></i>
@@ -487,8 +506,8 @@
                 <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col gap-2">
-                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL PRODUCTS</p>
-                            <h3 class="text-4xl font-bold text-gray-800">1</h3>
+                            <p id="tp" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+                            <h3 id="vp" class="text-4xl font-bold text-gray-800"></h3>
                         </div>
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
 
@@ -513,8 +532,8 @@
                 <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col gap-2">
-                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL SALES</p>
-                            <h3 class="text-4xl font-bold text-gray-800">6</h3>
+                            <p id="ts" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+                            <h3 id="vs" class="text-4xl font-bold text-gray-800"></h3>
                         </div>
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
                             <i class="fas fa-dollar-sign text-xl"></i>
@@ -539,8 +558,8 @@
                 <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col gap-2">
-                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">TOTAL COMPAIGNS</p>
-                            <h3 class="text-4xl font-bold text-gray-800">12</h3>
+                            <p id="tc" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+                            <h3 id="vc" class="text-4xl font-bold text-gray-800"></h3>
                         </div>
                         <div class="w-12 h-12 rounded-xl bg-blue-50 flex items-center justify-center text-blue-500">
 
@@ -565,8 +584,8 @@
                 <div class="bg-white rounded-xl shadow-sm border p-4 flex flex-col w-full">
                     <div class="flex justify-between items-start">
                         <div class="flex flex-col gap-2">
-                            <p class="text-xs font-semibold text-gray-500 tracking-wide uppercase">LEADS WITH WORK</p>
-                            <h3 class="text-4xl font-bold text-gray-800">3126</h3>
+                            <p id="tw" class="text-xs font-semibold text-gray-500 tracking-wide uppercase"></p>
+                            <h3 id="vw" class="text-4xl font-bold text-gray-800"></h3>
                         </div>
                         <div class="w-12 h-12 rounded-xl bg-indigo-50 flex items-center justify-center text-blue-500">
                             <i class="fas fa-check-circle text-xl"></i>

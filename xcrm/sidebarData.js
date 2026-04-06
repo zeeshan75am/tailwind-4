@@ -21,12 +21,58 @@ const cardData = {
     title: "TOTAL USERS",
     value: 52,
     changePercent: 0
-  }
+  },
+
+  actives: {
+    title: "TOTAL ACTIVES",
+    value: 52,
+    changePercent: 0
+  },
+  blocked: {
+    title: "TOTAL BLOCKED",
+    value: 0,
+    changePercent: 0
+  },
+  total: {
+    title: "TOTAL LEADS",
+    value: 92048,
+    changePercent: 0
+  },
+  assigned: {
+    title: "ASSIGNED LEADS",
+    value: 9431,
+    changePercent: 0
+  },
+  unassigned: {
+    title: "UNASSIGNED LEADS",
+    value: 82617,
+    changePercent: 0
+  },
+  products: {
+    title: "TOTAL PRODUCTS",
+    value: 1,
+    changePercent: 0
+  },
+  sales: {
+    title: "TOTAL SALES",
+    value: 6,
+    changePercent: 0
+  },
+  compaigns: {
+    title: "TOTAL COMPAIGNS",
+    value: 12,
+    changePercent: 0
+  },
+  work: {
+    title: "LEADS WITH WORK",
+    value: 3126,
+    changePercent: 0
+  },
+
 };
+ 
 
-
-
-export { sidebarData, cardData };
+export { sidebarData, cardData, };
 
 
 
